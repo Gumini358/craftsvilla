@@ -103,23 +103,3 @@ tidligereTilbakemeldinger.forEach(function(tilbakemelding) {
     /* Viser kortet på nettsiden */
     anmeldelsesOmrade.appendChild(kort);
 });
-
-
-/* Hindrer booking av datoer i fortiden */
-const datoFelt = document.querySelector("#dato");
-
-/* Henter dagens lokale dato */
-const iDag = new Date();
-const aar = iDag.getFullYear();
-const maaned = String(iDag.getMonth() + 1).padStart(2, "0");
-const dag = String(iDag.getDate()).padStart(2, "0");
-
-const dagensDato = `${aar}-${maaned}-${dag}`;
-
-/* Setter tidligste tillatte dato */
-datoFelt.min = dagensDato;
-
-/* Fjerner tidligere valgt dato hvis den er utløpt */
-if (datoFelt.value && datoFelt.value < dagensDato) {
-    datoFelt.value = "";
-}
