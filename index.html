@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CRAFTSVILLA – Kreative workshops</title>
+</head>
+<body>
+ 
+<header class="navbar">
+    <div class="logo">CRAFTSVILLA</div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#hjem">Hjem</a></li>
+            <li><a href="#booking">Booking</a></li>
+            <li><a href="#tilbakemeldinger">Tilbakemeldinger</a></li>
+            <li><a href="#galleri">Galleri</a></li>
+        </ul>
+    </nav>
+</header>
+   
+<main>
+    <section class="hero" id="hjem">
+        <div class="hero-content">
+            <h1>Skap noe vakkert sammen!</h1>
+
+            <p>
+                Oppdag gleden ved å skape kunst sammen
+                med familie og venner. Hos CRAFTSVILLA
+                tilbyr vi kreative workshops for alle aldre.
+            </p>
+
+            <a href="#booking" class="hero-button">
+                Book en workshop
+            </a>
+        </div>
+
+<div class="hero-image">
+    <img src="images/Hero Image.png" alt="Kreativt malekurs hos CRAFTSVILLA">
+</div>
+
+    </section>
+
+<section class="workshops" id="workshops">
+    <h2>Våre kreative workshops</h2>
+<div class="workshop-grid">
+
+<article class="workshop-card">
+    <img src="images/Mosaikkunst Image.png" alt="Mosaikkunst">
+
+    <h3>Mosaikkunst</h3>
+
+    <p class="pris">400 kr</p>
+
+    <p class="workshop-description">
+        Settet inkluderer: Ramme, treplate i A4-størrelse,
+        små fargede steiner og gummi.
+    </p>
+</article>
+
+<article class="workshop-card">
+    <img src="images/Akvarellmaling Image.png" alt="Akvarellmaling">
+
+    <h3>Akvarellmaling</h3>
+
+    <p class="pris">200 kr</p>
+
+    <p class="workshop-description">
+        Settet inkluderer: Ramme, akvarellpapir med designmal,
+        akvarellfarger og pensler.
+    </p>
+</article>
+
+<article class="workshop-card">
+    <img src="images/Lerretsmaling Image.png" alt="Lerretsmaling">
+
+    <h3>Lerretsmaling</h3>
+
+    <p class="pris">300 kr</p>
+
+    <p class="workshop-description">
+        Settet inkluderer: Ramme, akrylpapir med designmal,
+        akrylfarger og pensler.
+    </p>
+</article>
+
+    </div>
+</section>
+
+<section class="booking" id="booking">
+    <h2>Book din kreative workshop</h2>
+
+    <form class="booking-form">
+
+
+
+<form class="booking-form">
+
+
+    <label for="workshop">Velg workshop</label>
+    <select id="workshop" name="workshop" required>
+        <option value="">Velg workshop</option>
+        <option value="mosaikkunst">Mosaikkunst – 400 kr</option>
+        <option value="akvarellmaling">Akvarellmaling – 200 kr</option>
+        <option value="lerretsmaling">Lerretsmaling – 300 kr</option>
+    </select>
+
+    <label for="dato">Velg dato</label>
+    <input type="date" id="dato" name="dato" required>
+
+    <label for="tidspunkt">Velg tidspunkt</label>
+    <input type="time" id="tidspunkt" name="tidspunkt" required>
+
+    <button type="submit" class="booking-button">
+        Send bookingforespørsel
+    </button>
+
+</form>
+
+ 
+    </form>
+</section>
+
+<section class="tilbakemeldinger" id="tilbakemeldinger">
+
+    <h2>Hva sier kundene våre?</h2>
+
+    <div class="feedback-grid">
+
+<article class="feedback-card">
+
+    <div class="stjerner" aria-label="5 av 5 stjerner">
+        ★★★★★
+    </div>
+
+    <p class="feedback-text">
+        En fantastisk opplevelse! Jeg kom sammen med
+        datteren min, og vi koste oss med akvarellmaling.
+    </p>
+
+    <p class="feedback-author">Maria</p>
+
+</article>
+ 
+<article class="feedback-card">
+
+    <div class="stjerner" aria-label="5 av 5 stjerner">
+        ★★★★★
+    </div>
+
+    <p class="feedback-text">
+        Jeg deltok på mosaikkworkshop sammen med
+        vennene mine. Vi hadde det veldig gøy
+        og lærte noe nytt!
+    </p>
+
+    <p class="feedback-author">Tomas</p>
+
+</article>
+
+<article class="feedback-card">
+
+    <div class="stjerner" aria-label="5 av 5 stjerner">
+        ★★★★★
+    </div>
+
+    <p class="feedback-text">
+        Jeg kom sammen med kollegene mine for
+        å male på lerret. Det var en kreativ
+        og avslappende opplevelse!
+    </p>
+
+    <p class="feedback-author">Sofie</p>
+
+</article>
+
+
+    </div>
+</section>
+
+<section class="feedback-form-section">
+    <h2>Gi oss din tilbakemelding</h2>
+
+    <form class="feedback-form">
+        <input
+            type="text"
+            id="navn"
+            name="navn"
+            placeholder="Ditt navn"
+            required
+        >
+        <textarea
+            id="melding"
+            name="melding"
+            placeholder="Din tilbakemelding..."
+            rows="5"
+            required
+        ></textarea>
+
+        <button type="submit" class="feedback-submit">
+            Send tilbakemelding
+        </button>
+    </form>
+</section>
+
+<section class="galleri" id="galleri">
+    <h2>Galleri – Våre kreative øyeblikk</h2>
+
+    <div class="galleri-grid">
+
+<img
+    src="images/Gallery Image 1.png"
+    alt="Mosaikkunst laget med små fargede steiner"
+>
+
+<img
+    src="images/Gallery Image 2.png"
+    alt="Kreativt akvarellmaleri"
+>
+
+<img
+    src="images/Gallery Image 3.png"
+    alt="Kunstner som maler på lerret"
+>
+
+
+<!-- Andre rad med bilder -->
+<img
+    src="images/Gallery Image 4.png"
+    alt="Fargerik mosaikk med dekorative mønstre"
+>
+
+<img
+    src="images/Gallery Image 5.png"
+    alt="Akvarellmaleri med fargerike blomster"
+>
+
+<img
+    src="images/Gallery Image 6.png"
+    alt="Kunstner som maler et bilde på lerret"
+>
+
+    </div>
+</section>
+
+    </main>
+
+    <!-- Bunntekst for nettsiden -->
+    <footer class="footer">
+        <p>© 2026 CRAFTSVILLA. Alle rettigheter forbeholdt.</p>
+        <p>Skap noe vakkert sammen med oss!</p>
+    </footer>
+
+    <!-- Kobler JavaScript til nettsiden -->
+    <script src="script.js"></script>
+</body>
+</html>

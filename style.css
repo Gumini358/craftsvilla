@@ -1,0 +1,526 @@
+
+/* Podstawowe ustawienia strony */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    height: 90px;
+    background-color: #d9d9d9;
+}
+
+/* Logo */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Menu nawigacyjne */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Linki */
+.nav-links a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* HERO SECTION */
+.hero {
+    background-color: #e5e5e5;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    padding: 80px;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Hero content */
+.hero-content {
+    flex: 1;
+    min-width: 0;
+    max-width: 650px;
+}
+
+
+/* Hero title */
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #222222;
+}
+
+/* Hero description */
+.hero-content p {
+    font-size: 22px;
+    line-height: 1.5;
+    color: #444444;
+    margin-bottom: 40px;
+}
+
+/* Hero button */
+.hero-button {
+    display: inline-block;
+    background-color: #bdbdbd;
+    color: #222222;
+    text-decoration: none;
+    padding: 18px 24px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* Hero image */
+.hero-image {
+    width: 550px;
+    max-width: 40%;
+    flex-shrink: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+
+/* WORKSHOP-SEKSJON */
+.workshops {
+    padding: 80px;
+    background-color: #ffffff;
+}
+
+.workshops h2 {
+    font-size: 40px;
+    margin-bottom: 60px;
+    color: #222222;
+}
+
+/* Oppsett for tre workshop-kort */
+.workshop-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+/* Utseendet til workshop-kortene */
+.workshop-card {
+    background-color: #f2f2f2;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+/* Bilder i workshop-kortene */
+.workshop-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Navn på workshopen */
+.workshop-card h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Pris på workshopen */
+.workshop-card .pris{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Beskrivelse av hva settet inneholder */
+.workshop-description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555555;
+}
+
+
+/* BOOKING-SEKSJON */
+.booking {
+    padding: 80px;
+    background-color: #ffffff;
+}
+
+/* Overskrift for booking */
+.booking h2 {
+    font-size: 40px;
+    color: #222222;
+    margin-bottom: 50px;
+}
+
+/* Booking-skjema */
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+}
+
+/* Etiketter for skjemafeltene */
+.booking-form label {
+    font-size: 20px;
+    color: #555555;
+}
+
+/* Valg av workshop, dato og tidspunkt */
+.booking-form select,
+.booking-form input {
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    font-size: 20px;
+    font-family: inherit;
+    color: #555555;
+    background-color: #f2f2f2;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+
+/* Knapp for bookingforespørsel */
+.booking-button {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    background-color: #bdbdbd;
+    color: #222222;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+}
+
+/* Effekt når musepekeren er over knappen */
+.booking-button:hover {
+    background-color: #a5a5a5;
+}
+
+
+/* Sørger for at alle skjemafelt har samme bredde */
+.booking-form {
+    align-items: stretch;
+}
+
+.booking-form select,
+.booking-form input,
+.booking-form .booking-button {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+/* Gir mer plass til pilen i workshop-feltet */
+.booking-form select {
+    padding-right: 35px;
+}
+
+
+/* Tilpasset pil i valg av workshop */
+.booking-form select {
+    appearance: none;
+    -webkit-appearance: none;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23555555' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 20px;
+    padding-right: 50px;
+}
+
+
+/* TILBAKEMELDINGER FRA KUNDER */
+.tilbakemeldinger {
+    padding: 80px;
+    background-color: #ffffff;
+}
+
+/* Overskrift for kundeanmeldelser */
+.tilbakemeldinger h2 {
+    font-size: 40px;
+    color: #222222;
+    margin-bottom: 60px;
+}
+
+/* Oppsett for tre anmeldelseskort */
+.feedback-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+/* Utseendet til anmeldelseskortene */
+.feedback-card {
+    background-color: #f2f2f2;
+    border-radius: 16px;
+    padding: 25px;
+    min-height: 250px;
+}
+
+/* Gullfargede stjerner */
+.stjerner {
+    color: #e5a000;
+    font-size: 26px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+/* Tekst i kundeanmeldelsen */
+.feedback-text {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Navn på kunden */
+.feedback-author {
+    font-size: 18px;
+    font-weight: 600;
+    color: #555555;
+}
+
+
+
+/* Plasser kundenavnene nederst i kortene */
+.feedback-card {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Skyv kundenavnet til bunnen av kortet */
+.feedback-author {
+    margin-top: auto;
+}
+
+
+/* SEKSJON FOR KUNDETILBAKEMELDINGER */
+.feedback-form-section {
+    padding: 80px;
+    background-color: #ffffff;
+}
+
+/* Overskrift for tilbakemeldingsskjemaet */
+.feedback-form-section h2 {
+    font-size: 32px;
+    color: #222222;
+    margin-bottom: 40px;
+}
+
+/* Oppsett for tilbakemeldingsskjemaet */
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+}
+
+/* Etiketter for skjemafeltene */
+.feedback-form label {
+    font-size: 20px;
+    color: #555555;
+}
+
+/* Felt for navn og tilbakemelding */
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%;
+    padding: 18px 20px;
+    font-size: 20px;
+    font-family: inherit;
+    color: #222222;
+    background-color: #f2f2f2;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Høyde på navnefeltet */
+.feedback-form input {
+    height: 60px;
+}
+
+/* Størrelse på meldingsfeltet */
+.feedback-form textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+/* Knapp for å sende tilbakemelding */
+.feedback-submit {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    background-color: #bdbdbd;
+    color: #222222;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Effekt når musepekeren er over knappen */
+.feedback-submit:hover {
+    background-color: #a5a5a5;
+}
+
+
+/* GALLERI-SEKSJON */
+.galleri {
+    padding: 80px;
+    background-color: #ffffff;
+}
+
+/* Overskrift for galleriet */
+.galleri h2 {
+    font-size: 40px;
+    color: #222222;
+    margin-bottom: 60px;
+}
+
+/* Oppsett med tre kolonner */
+.galleri-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+/* Bilder i galleriet */
+.galleri-grid img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+}
+
+
+/* BUNNTEKST FOR NETTSIDEN */
+.footer {
+    background-color: #d9d9d9;
+    padding: 40px 20px;
+    text-align: center;
+    color: #222222;
+}
+
+/* Tekst i bunnteksten */
+.footer p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Fjerner ekstra avstand under siste avsnitt */
+.footer p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* MOBILTILPASNING FOR SKJERMER UNDER 768 PX */
+@media (max-width: 768px) {
+
+    /* Navigasjonsmeny */
+    .navbar {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Hero-seksjon */
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        height: 260px;
+    }
+
+    /* Seksjoner */
+    .workshops,
+    .booking,
+    .tilbakemeldinger,
+    .feedback-form-section,
+    .galleri {
+        padding: 40px 20px;
+    }
+
+    /* Overskrifter */
+    .workshops h2,
+    .booking h2,
+    .tilbakemeldinger h2,
+    .galleri h2 {
+        font-size: 28px;
+    }
+
+    /* Ett kort per rad */
+    .workshop-grid,
+    .feedback-grid,
+    .galleri-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Skjemaer */
+    .booking-form,
+    .feedback-form {
+        max-width: 100%;
+    }
+}
